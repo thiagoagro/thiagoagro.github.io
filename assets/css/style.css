@@ -788,9 +788,20 @@ code {
   margin-top: 18px;
 }
 
-.project-card .project-link {
+.project-card .project-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
   margin-top: auto;
   padding-top: 18px;
+}
+
+.project-card .project-link {
+  margin-top: 0;
+}
+
+.project-link-app {
+  color: var(--accent-blue) !important;
 }
 
 .note-box {
