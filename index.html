@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research portfolio of Thiago Orlando Costa Barboza: Precision and Digital Agriculture, Remote Sensing, UAV imagery, Machine Learning and Computer Vision." />
+  <title>Thiago Orlando Costa Barboza | Digital Agriculture Portfolio</title>
+  <link rel="icon" href="assets/images/avatar.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="app-shell">
+    <aside class="profile-card" aria-label="Profile sidebar">
+      <div class="avatar-wrap">
+        <img src="assets/images/avatar.jpg" alt="Portrait of Thiago Orlando Costa Barboza" class="avatar" />
+      </div>
+
+      <div class="profile-summary">
+        <p class="eyebrow">Research Portfolio</p>
+        <h1>Thiago Orlando Costa Barboza</h1>
+        <p class="role">Ph.D. Candidate in Agronomy</p>
+        <p class="tagline">Precision & Digital Agriculture</p>
+      </div>
+
+      <div class="quick-tags" aria-label="Main research areas">
+        <span>UAV</span>
+        <span>Remote Sensing</span>
+        <span>ML</span>
+        <span>YOLO</span>
+      </div>
+
+      <div class="contact-list">
+        <a href="mailto:thiagocostaagro@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>Email</span>
+        </a>
+        <a href="https://github.com/thiagoagro" target="_blank" rel="noreferrer" class="contact-item">
+          <span class="contact-icon">⌘</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/thiago-orlando-costa-barboza-5ba88213b/" target="_blank" rel="noreferrer" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://orcid.org/0000-0001-5156-2474" target="_blank" rel="noreferrer" class="contact-item">
+          <span class="contact-icon">ID</span>
+          <span>ORCID</span>
+        </a>
+        <span class="contact-item muted">
+          <span class="contact-icon">⌖</span>
+          <span>Lavras, MG, Brazil</span>
+        </span>
+      </div>
+    </aside>
+
+    <main class="content-card">
+      <nav class="top-nav" aria-label="Portfolio sections">
+        <button class="nav-link active" data-target="about">About</button>
+        <button class="nav-link" data-target="experience">Experience</button>
+        <button class="nav-link" data-target="papers">Papers</button>
+        <button class="nav-link" data-target="projects">Projects</button>
+      </nav>
+
+      <section class="page active" data-page="about">
+        <div class="section-heading">
+          <p class="eyebrow">Digital agriculture applications</p>
+          <h2>Transforming agronomic field data into practical AI and remote sensing workflows.</h2>
+        </div>
+
+        <div class="hero-layout">
+          <div class="hero-copy glass-panel">
+            <p>
+              I work at the intersection of precision agriculture, machine learning, UAV imagery,
+              satellite remote sensing and computer vision. My research focuses on building data-driven
+              approaches for crop monitoring, yield prediction, plant counting, variable-rate management
+              and decision support in agricultural systems.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="https://github.com/thiagoagro" target="_blank" rel="noreferrer">View GitHub</a>
+              <button class="secondary-btn" data-target-shortcut="projects">Explore projects</button>
+            </div>
+          </div>
+
+          <div class="hero-photo-card">
+            <img src="assets/images/profile.jpg" alt="Thiago Orlando Costa Barboza" />
+            <div class="photo-badge">
+              <span>Current focus</span>
+              <strong>AI for Precision Agriculture</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid" id="statsGrid" aria-label="Portfolio highlights"></div>
+
+        <div class="section-heading compact">
+          <p class="eyebrow">Career path</p>
+          <h2>Timeline carousel</h2>
+        </div>
+
+        <div class="timeline-carousel glass-panel">
+          <button class="carousel-btn" id="timelinePrev" aria-label="Previous timeline item">‹</button>
+          <div class="timeline-track" id="timelineTrack" tabindex="0" aria-label="Timeline carousel"></div>
+          <button class="carousel-btn" id="timelineNext" aria-label="Next timeline item">›</button>
+        </div>
+
+        <div class="section-heading compact">
+          <p class="eyebrow">What I do</p>
+          <h2>Research and applied work</h2>
+        </div>
+        <div class="service-grid" id="serviceGrid"></div>
+      </section>
+
+      <section class="page" data-page="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Education, research experience and technical background.</h2>
+        </div>
+
+        <div class="two-column">
+          <div class="glass-panel padded">
+            <h3>Education & research</h3>
+            <div class="vertical-timeline" id="experienceTimeline"></div>
+          </div>
+
+          <div class="glass-panel padded">
+            <h3>Technical stack</h3>
+            <div class="skill-list" id="skillList"></div>
+          </div>
+        </div>
+
+        <div class="glass-panel padded spacer-top">
+          <h3>Courses, lectures and memberships</h3>
+          <div class="chips-list" id="activitiesList"></div>
+        </div>
+      </section>
+
+      <section class="page" data-page="papers">
+        <div class="section-heading">
+          <p class="eyebrow">Academic output</p>
+          <h2>Journal articles, conference publications and book chapters.</h2>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-buttons" id="paperFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="journal">Journal papers</button>
+            <button class="filter-btn" data-filter="conference">Conferences</button>
+            <button class="filter-btn" data-filter="book">Book chapters</button>
+          </div>
+          <label class="search-box">
+            <span>Search</span>
+            <input type="search" id="paperSearch" placeholder="YOLO, UAV, peanut, corn..." />
+          </label>
+        </div>
+
+        <div class="papers-list" id="papersList"></div>
+      </section>
+
+      <section class="page" data-page="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Repositories and applied ideas connected to digital agriculture.</h2>
+        </div>
+
+        <div class="filter-buttons project-filters" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+          <button class="filter-btn" data-filter="remote-sensing">Remote Sensing</button>
+          <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
